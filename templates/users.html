@@ -2,17 +2,18 @@
 <html>
 <head>
     <title>Users - MovieWeb App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='promptstyle.css') }}">
 </head>
 <body>
-    <h1>Users</h1>
-    <ul>
+    <h1 class="list-movies-title">Users</h1>
+    <div class="list-users">
         {% for user in users %}
-        <li>
-            <a href="/users/{{ user.id }}">{{ user.name }}</a>
-        </li>
+        <div>
+            <a href="/users/{{ user.id }}" class="user-link rounded-button">{{ user.name }}</a>
+        </div>
         {% endfor %}
-    </ul>
-    <a href="{{ url_for('add_user') }}">Add User</a>
+    </div>
+    <a href="{{ url_for('add_user') }}" class="add-user-button">Add User</a>
 </body>
 </html>
 

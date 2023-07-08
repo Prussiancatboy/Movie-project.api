@@ -2,10 +2,11 @@
 <html>
 <head>
     <title>Update Movie</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='promptstyle.css') }}">
 </head>
 <body>
-    <h1>Update Movie</h1>
-    <form action="{{ url_for('update_movie', user_id=user_id, movie_id=movie_id) }}" method="POST">
+    <h1 class="list-movies-title">Update Movie</h1>
+    <form action="{{ url_for('update_movie', user_id=user_id, movie_id=movie_id) }}" method="POST" class="forms">
         <label for="movie_title">Movie Title:</label>
         <input type="text" name="movie_title" id="movie_title" value="{{ movie['name'] }}" required>
         <br>
@@ -21,5 +22,4 @@
         <input type="submit" value="Update Movie">
     </form>
 </body>
-</html>
 </html>

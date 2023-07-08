@@ -113,8 +113,6 @@ class JsonDataManager(DataManagerInterface):
             except ValueError:
                 movie_year = movie_data['Year']
 
-
-
             movie = {
                 'id': len(user_movies) + 1,
                 'name': movie_data['Title'],

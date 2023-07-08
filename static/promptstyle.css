@@ -5,16 +5,19 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-
   min-height: 100vh;
 }
 
 .forms {
   margin-top: 10px;
   border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .forms input[type="text"],
+.forms input[type="number"],
 .forms input[type="submit"] {
   border-radius: 25px;
   padding: 5px 10px;
@@ -27,4 +30,17 @@ body {
   text-align: center;
   font-size: 16pt;
   width: 100%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 25px;
+}
+
+.list-users {
+  padding: 10px;
+  background: #8b8b8b;
+  color: white;
+  text-align: center;
+  font-size: 16pt;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 25px;
+
 }

@@ -2,12 +2,13 @@
 <html>
 <head>
     <title>Add User</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='promptstyle.css') }}">
 </head>
 <body>
-    <h1>Add User</h1>
-    <form method="POST" action="{{ url_for('add_user') }}">
+    <h1 class="list-movies-title">Add User</h1>
+    <form method="POST" action="{{ url_for('add_user') }}" class="forms">
         <label for="username">Username:</label>
-        <input type="text" name="username" id="username">
+        <input type="text" name="username" id="username" required>
         <br>
         <input type="submit" value="Add User">
     </form>
